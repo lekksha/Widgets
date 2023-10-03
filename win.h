@@ -1,6 +1,17 @@
 #ifndef win_h
 #define win_h
 #include <QtGui>
+
+#include <QTextCodec>
+#include <QFrame>
+#include <QLabel>
+#include <QLineEdit>
+#include <QPushButton>
+
+#include <QValidator>
+#include <QMainWindow>
+#include <QWidget>
+
 class Win:public QWidget // класс окна
 {
     Q_OBJECT    // макрос Qt, обеспечивающий корректное создание сигналов и слотов
