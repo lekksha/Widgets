@@ -1,4 +1,5 @@
 QT -= gui
+QT += widgets
 
 CONFIG += c++17 console
 CONFIG -= app_bundle
