@@ -3,7 +3,7 @@
 #include <QtGui>
 class Win:public QWidget // класс окна
 {
-    Q_OBJECT
+    Q_OBJECT    // макрос Qt, обеспечивающий корректное создание сигналов и слотов
 protected:
     QTextCodec *codec;
     QFrame *frame;

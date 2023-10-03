@@ -28,7 +28,8 @@ Win::Win(QWidget *parent):QWidget(parent)
     QHBoxLayout *hLayout = new QHBoxLayout(this);
     hLayout->addWidget(frame);
     hLayout->addLayout(vLayout2);
-    begin(); connect(exitButton,SIGNAL(clicked(bool)), this,SLOT(close()));
+    begin();
+    connect(exitButton,SIGNAL(clicked(bool)), this,SLOT(close()));
     connect(nextButton,SIGNAL(clicked(bool)), this,SLOT(begin()));
     connect(inputEdit,SIGNAL(returnPressed()), this,SLOT(calc()));
 }
