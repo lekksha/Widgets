@@ -3,7 +3,7 @@
 #include <QMessageBox>
 #include <QVBoxLayout>
 
-win::win(QWidget *parent):QWidget(parent)
+Win::Win(QWidget *parent):QWidget(parent)
 {
     setWindowTitle("Возведение в квадрат");
     frame = new QFrame(this);
@@ -42,7 +42,7 @@ win::win(QWidget *parent):QWidget(parent)
     connect(inputEdit, SIGNAL(returnPressed()), this, SLOT(calc()));
 }
 
-void win::begin() {
+void Win::begin() {
     inputEdit->clear();
     nextButton->setEnabled(false);
     nextButton->setDefault(false);
@@ -53,7 +53,7 @@ void win::begin() {
     inputEdit->setFocus();
 }
 
-void win::calc()
+void Win::calc()
 {
     bool Ok=true;
     float r, a;

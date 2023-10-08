@@ -9,7 +9,7 @@
 #include <QValidator>
 #include <QWidget>
 
-class win : public QWidget
+class Win : public QWidget
 {
 protected:
     // QTextCodec *Codec
@@ -21,7 +21,7 @@ protected:
     QPushButton *nextButton;
     QPushButton *exitButton;
 public:
-    win(QWidget *parent = 0);
+    Win(QWidget *parent = 0);
 public slots:
     void begin();   // Для начальной настройки интерфейса
     void calc();    // Метод реализации вычислений

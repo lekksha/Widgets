@@ -1,5 +1,3 @@
-QT -= gui
-
 CONFIG += c++17 console
 CONFIG -= app_bundle
 
@@ -20,3 +18,5 @@ HEADERS += \
     win.h
 
 QT += widgets
+QT += core5compat
+QT += gui
