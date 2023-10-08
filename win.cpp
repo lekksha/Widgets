@@ -59,7 +59,7 @@ void Win::calc()
     bool Ok=true;
     float r, a;
     QString str=inputEdit->text();
-    a=str.toDouble(&Ok);
+    a=str.toDouble(&Ok);    // возвращает 0, если значение не число (например: 1dwmnjkd12)
     if (Ok)
     {
         r = a * a;
