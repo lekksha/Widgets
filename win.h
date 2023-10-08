@@ -1,6 +1,9 @@
 #ifndef WIN_H
 #define WIN_H
 
+
+
+#include <QTextCodec>
 #include <QFrame>
 #include <QLabel>
 #include <QLineEdit>
@@ -11,9 +14,11 @@
 
 class Win : public QWidget
 {
+    Q_OBJECT
 protected:
     // QTextCodec *Codec
     QFrame *frame;
+    QTextCodec *codec;
     QLabel *inputLabel;
     QLineEdit *inputEdit;
     QLabel *outputLabel;
@@ -22,6 +27,7 @@ protected:
     QPushButton *exitButton;
 public:
     Win(QWidget *parent = 0);
+
 public slots:
     void begin();   // Для начальной настройки интерфейса
     void calc();    // Метод реализации вычислений
